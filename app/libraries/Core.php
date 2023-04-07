@@ -14,17 +14,20 @@ class Core
     public function __construct()
     {
         $url = $this->geturl();
+        
+        if (isset($url[0])) {
+            // Look for controllers
+            if (false === file_exists('../app/controllers/' . ucwords($url[0] ?? '') . '.php')) {
+                echo 'URL não encontrada!';
+                return;
+            }
 
-        // Look for controllers
-        if (false === file_exists('../app/controllers/' . ucwords($url[0] ?? '') . '.php')) {
-            echo 'URL não encontrada!';
-            return;
+            // Set controller variables
+            $this->currentController = ucwords($url[0] ?? '');
+
+            // unset 0 index
+            unset($url[0]);
         }
-
-        // Set controller variables
-        $this->currentController = ucwords($url[0] ?? '');
-        // unset 0 index
-        unset($url[0]);
 
         // Require controllers
         require_once '../app/controllers/' . $this->currentController . '.php';
