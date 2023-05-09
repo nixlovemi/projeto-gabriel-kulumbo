@@ -1,0 +1,40 @@
+.procura{
+    background-color: rgb(0, 0, 255);
+    width: 860px;
+    margin: auto;
+    margin-top: 30px;
+    height: 115px;
+    padding: 15px;
+    text-align: center;
+    color: beige;
+        
+}
+.input{
+    width: 400px;
+    }
+    
+.navbar-nav li.active {
+    color: blue;
+}
+.container2{
+    background-color: rgb(68, 18, 75);
+    width: 860px;
+    margin: auto;
+    margin-top: 10px;
+    height: 435px;
+    margin-bottom: 30px;
+    justify-content: center;
+    
+}
+.lupa{
+    font-size: smaller;
+}
+.card-img-top{
+    border-radius: 50%;
+    width: 150px;
+    margin: auto;
+
+}
+
+
+
