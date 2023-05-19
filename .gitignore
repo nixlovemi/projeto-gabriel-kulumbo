@@ -2,3 +2,4 @@
 .env.backup
 .DS_Store
 docker/*
+app/config/config.php
