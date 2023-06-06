@@ -17,8 +17,21 @@ class Home extends Controller
     public function Index()
     {
         $data = [
-            'title' => 'Home',
-            'description' => "Welcome to our website! We are dedicated to providing you with the best information, products, and services in our field. Whether you are looking for expert advice, high-quality products, or top-notch services, we have you covered. Our team is passionate about what we do, and we are committed to delivering excellence in everything we do. Explore our site to learn more about our offerings and how we can help you achieve your goals. Thank you for choosing us, and we look forward to serving you!"
+            [
+                'img' => 'ex01.jpeg',
+                'nome' => 'Jonh Ferdinand',
+                'funcao' => "Some quick example text to build on the card title and make up the bulk of the card's content. 1."
+            ],
+            [
+                'img' => 'ex02.jpeg',
+                'nome' => 'Ernesto Mateus',
+                'funcao' => 'Some quick example text to build on the card title and make up the bulk of the card\'s content. 2.'
+            ],
+            [
+                'img' => 'ex03.png.jpeg',
+                'nome' => 'Roberto Carlos',
+                'funcao' => 'Some quick example text to build on the card title and make up the bulk of the card\'s content. 3.'
+            ]
         ];
         $this->view('home/index', 'Home', $data);
     }
