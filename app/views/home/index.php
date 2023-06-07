@@ -15,11 +15,11 @@
     <?php foreach($data as $curriculo): ?>
       <div class="col-sm">
         <div class="card text-white bg-dark">
-          <img class="card-img-top" src="<?=$curriculo['img']?>" alt="Card image cap">
+          <img class="card-img-top" src="<?=$curriculo->imagem?>" alt="Card image cap">
           <div class="card-body text-center">
-            <h5 class="card-title"><?php echo $curriculo['nome']; ?></h5>
-            <p class="card-text"><?=$curriculo['funcao']?></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title"><?php echo $curriculo->nome_completo; ?></h5>
+            <p class="card-text"><?=$curriculo->curriculo?></p>
+            <a href="#" class="btn btn-primary">Ver perfil</a>
           </div>
         </div>
       </div>
