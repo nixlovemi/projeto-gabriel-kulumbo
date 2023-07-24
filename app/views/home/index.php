@@ -1,7 +1,7 @@
 <?php require APPROOT . '/views/includes/header.php'; ?>
 
 <div class="procura margin-bottom-padrao bg-cinza-padrao">
-  <h3>PROCURAR UM PROFISSIONAL!</h3>
+  <h3>PROCURAR UM PROFISSIONAL</h3>
   <div class="input-group mb-3">
     <input type="text" class="form-control" placeholder="Pesquisar ..." aria-label="Pesquisar ..." aria-describedby="basic-addon2">
     <div class="input-group-append">
